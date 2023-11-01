@@ -7,11 +7,25 @@ public class Tarefa2 {
 	}
 	
 	public static void separarGrupos() {
+		Scanner scan= new Scanner(System.in);
 		Map<String, String> map= new HashMap<String, String>();
-		map.put("Daniel", "Masculino");
-		map.put("Daniela", "Feminino");
-		map.put("Laiza", "Feminino");
-		map.put("Wosley", "Masculino");
+		
+		System.out.println("Quer adicionar outra pessoa? \n Digite: \n 0 para nao\n 1 para sim");
+		int quest= scan.nextInt();
+		scan.nextLine();
+		while(quest!= 0) {
+			scan.nextLine();
+			String nome, sexo;
+			System.out.println("Digite o nome da pessoa: ");
+			nome= scan.nextLine();
+			System.out.println("Digite o sexo da pessoa: ");
+			sexo= scan.nextLine();
+			
+			map.put(nome, sexo);
+		
+			System.out.println("Quer adicionar outra pessoa? \n Digite: \n 0 para nao\n 1 para sim");
+			quest= scan.nextInt();
+		}
 		
 		System.out.println("Grupo Feminino: ");
 		for(String i: map.keySet()) {
