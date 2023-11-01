@@ -12,7 +12,6 @@ public class Tarefa2 {
 		
 		System.out.println("Quer adicionar outra pessoa? \n Digite: \n 0 para nao\n 1 para sim");
 		int quest= scan.nextInt();
-		scan.nextLine();
 		while(quest!= 0) {
 			scan.nextLine();
 			String nome, sexo;
