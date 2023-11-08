@@ -11,7 +11,7 @@ public class Programa {
 		pessoa.setCpf("XXX.XXX.XXX-XX");
 		System.out.println(pessoa.getNome());
 		System.out.println(pessoa.getIdade());
-		System.out.println(pessoa.getCpf());
+		System.out.println(pessoa.imprimirDocumento());
 		
 		System.out.println("\nPessoa Juridica: ------------------");
 		pessoa2.setNome("Wosley");
@@ -19,6 +19,6 @@ public class Programa {
 		pessoa2.setCnpj("XX.XXX.XXX/0001-XX");
 		System.out.println(pessoa2.getNome());
 		System.out.println(pessoa2.getIdade());
-		System.out.println(pessoa2.getCnpj());
+		System.out.println(pessoa2.imprimirDocumento());
 	}
 }
